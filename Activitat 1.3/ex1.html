@@ -1,0 +1,1849 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<body>
+
+<style>
+	body {
+		font-family: "Segoe UI", Arial, sans-serif;
+		font-size: 12px;
+		margin: 0 auto;
+		
+	} 
+	table{
+		width: 100%;
+		background-color: #F7F7FB;
+		border-radius:5px;
+		border: 1px solid #9BACD0;
+	}
+	th{
+		background-color: #FF9D90;
+		color:#F7F7FB;
+		padding: 10px;
+		text-transform: uppercase;
+		
+	}
+	.titulo{
+		background-color: #FFBF72;
+		color: #F7F7FB;
+	}
+	.concepto{
+		background-color: #FFE4D8;
+		text-transform: uppercase;
+		font-size: 16px;	
+		width: 300px;
+		padding: 10px;
+		}
+	.resultado{
+		background-color: #D3F4F7;
+		width: 360px;
+		padding:10px;
+		font-size: 14px;
+	}	
+	.codigo{
+		background-color: #CCE4EE;
+		width: 300px;
+		padding:10px;
+	}
+	.taula{
+		background-color: #FFBF72;
+	}
+	.images{
+		margin: 10px 0 10px 328px;
+	}
+	.texto{
+		text-transform: lowercase;
+		font-size: 12px;
+		font-style: italic;
+	}
+
+</style>
+	<table>
+		<tr align="center">
+			<th class="titulo">concepte</th>
+			<th class="titulo">codi</th>
+			<th class="titulo">resultat</th>
+		</tr>
+		<tr>
+			<tr> 
+				<th colspan="3">Variables</th>
+			</tr>
+			<td class="concepto">Variables</td>
+			<td class="codigo">
+				<pre>
+				<code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;p id="demovariable"&gt;&lt;/p&gt;
+&lt;script&gt;
+var x = 10;
+var y = 6;
+document.getElementById("demovariable").innerHTML = x + y;
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+				</code>
+				</pre>
+			</td>
+			<td class="resultado">
+				<p id="demovariable"></p>
+				<script>
+					var x = 10;
+					var y = 6;
+					document.getElementById("demovariable").innerHTML = x + y;
+				</script>
+			</td>
+		</tr>	
+		<tr>
+		<tr> 
+			<th colspan="3">Data Types</th>
+		</tr>
+			<td class="concepto">String</td>
+			<td class="codigo">	
+					<pre>
+						<code>
+&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+&lt;body&gt;
+&lt;p id="demostring"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+var carName1 = "Volvo XC60";
+var carName2 = 'Volvo XC60';
+var answer1 = "It's alright";
+var answer2 = "He is called 'Johnny'";
+var answer3 = 'He is called "Johnny"';
+
+document.getElementById("demostring").innerHTML =
+carName1 + "&lt;br&gt;" + 
+carName2 + "&lt;br&gt;" + 
+answer1 + "&lt;br&gt;" + 
+answer2 + "&lt;br&gt;" + 
+answer3;
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;			
+					</code>
+			 </pre>	
+		</td>
+    	 <td class="resultado">
+			<p id="demostring"></p>
+				<script>
+				var carName1 = "Volvo XC60";
+				var carName2 = 'Volvo XC60';
+				var answer1 = "It's alright";
+				var answer2 = "He is called 'Johnny'";
+				var answer3 = 'He is called "Johnny"';
+
+				document.getElementById("demostring").innerHTML =
+				carName1 + "<br>" + 
+				carName2 + "<br>" + 
+				answer1 + "<br>" + 
+				answer2 + "<br>" + 
+				answer3;
+				</script>
+            </td>
+        </tr>
+        <tr>
+			<td class="concepto">Números</td>
+			<td class="codigo">
+			  <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p id="demonumbers"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+var x1 = 34.00;
+var x2 = 34;
+var y = 123e5;
+var z = 123e-5;
+
+document.getElementById("demonumbers").innerHTML = x1 + "&lt;br&gt;" + x2 + "&lt;br&gt;" + y + "&lt;br&gt;" + z
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+			</code></pre>
+			</td>
+			<td class="resultado">				
+				<p id="demonumbers"></p>
+				<script>
+				var x1 = 34.00;
+				var x2 = 34;
+				var y = 123e5;
+				var z = 123e-5;
+				document.getElementById("demonumbers").innerHTML = x1 + "<br>" + x2 + "<br>" + y + "<br>" + z
+				</script>		
+            </td>
+        </tr>
+        <tr>
+            <td class="concepto">Arrays</td>
+			<td class="codigo">
+		    	<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p id="demoarrays"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+var cars = ["Saab","Volvo","BMW"];
+
+document.getElementById("demoarrays").innerHTML = cars[0];
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+				</code></pre>
+			</td>
+			<td class="resultado">
+			<p id="demoarrays"></p>
+			<script>
+				var cars = ["Saab","Volvo","BMW"];
+
+				document.getElementById("demoarrays").innerHTML = cars[0];
+			</script>
+		</td>
+		</tr>
+			<td class="concepto">Objectes</td>
+			<td class="codigo">
+		    	<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;p id="demoobjects"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+var person = {
+    firstName : "John",
+    lastName  : "Doe",
+    age       : 50,
+    eyeColor  : "blue"
+};
+
+document.getElementById("demoobjects").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+				</code></pre>
+			</td>
+			<td class="resultado">
+				<p id="demoobjects"></p>
+					<script>
+					var person = {
+						firstName : "John",
+						lastName  : "Doe",
+						age       : 50,
+						eyeColor  : "blue"
+					};
+
+					document.getElementById("demoobjects").innerHTML =
+					person.firstName + " is " + person.age + " years old.";
+					</script>
+			</td>
+		</tr>
+			<td class="concepto">Undefined and null</td>
+			<td class="codigo">
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;El valor d'una variable sense valor és indefinit.&lt;/p&gt;
+&lt;p&gt;Les variables es poden buidar deixant el seu valor a null.&lt;/p&gt;
+
+&lt;p id="demonull"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+var person;
+var car = "Volvo";
+var x = null;
+document.getElementById("demonull").innerHTML =
+person + "&lt;br&gt;" + car + "&lt;br&gt;" + x;
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt; 
+				</code></pre>
+			</td>
+			<td class="resultado">			
+				<p id="demonull"></p>
+
+				<script>
+				var person;
+				var car = "Volvo";
+				var x = null;
+				document.getElementById("demonull").innerHTML =
+				person + "<br>" + car + "<br>" + x;
+				</script>
+			</td>	
+		</tr>
+	    <tr>
+		<tr> 
+			<th colspan="3">Objectes</th>
+		</tr>
+		<tr>
+			<th class="taula" colspan="3"> Quadre explicatiu de propietats i mètodes dels objectes</th>
+		</tr>	
+			<th>Objecte: el cotxe</th>
+			<th>Propietats</th>
+			<th>Mètodes</th>
+		</tr>
+		<tr>
+			<td class="concepto">
+				<img src="http://segurosbaratos.motorgiga.com/uploads/comparador_seguros_de_coche.jpg" style="width:360px">
+			</td>
+			<td class="codigo">
+				<p>car.name = Fiat</p>
+				<p>car.model = 500</p>
+				<p>car.weight = 850kg</p>
+				<p>car.color = red</p>
+			</td>
+			<td class="resultado">
+				<p>car.start()</p>
+				<p>car.drive()</p>
+				<p>car.brake()</p>
+				<p>car.stop()</p>
+			</td>	
+		</tr>
+		<tr>
+			<td class="concepto">Definició d'un objecte</td>
+			<td class="codigo">	
+				<pre>
+					<code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p id=&quot;definitiondemo&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+var person = {
+firstName : &quot;John&quot;,
+lastName : &quot;Doe&quot;,
+age : 50,
+eyeColor : &quot;blue&quot;
+};
+
+document.getElementById(&quot;definitiondemo&quot;).innerHTML =
+person.firstName + &quot; is &quot; + person.age + &quot; years old.&quot;;
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+				</code>
+			</pre>
+		</td>
+			<td class="resultado">
+			<p>Creació d'un objecte.</p>
+
+			<p id="definitiondemo"></p>
+
+				<script>
+				var person = {
+				    firstName : "John",
+				    lastName  : "Doe",
+				    age       : 50,
+				    eyeColor  : "blue"
+				};
+
+				document.getElementById("definitiondemo").innerHTML =
+				person.firstName + " is " + person.age + " years old.";
+				</script>
+			</td>
+		</tr>
+			<td class="concepto">Propietats</td>
+			<td class="codigo">	
+				<pre>
+					<code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;
+Hi ha dos formes d'accedir a la propietat d'un objecte.
+&lt;/p&gt;
+&lt;p&gt;
+Es pot utilitzar :  .property or [&quot;property&quot;].
+&lt;/p&gt;
+
+&lt;p id=&quot;demopropietat&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+var person = {
+    firstName: &quot;Eva&quot;,
+    lastName : &quot;Queralt&quot;,
+    id       :  1128
+};
+document.getElementById(&quot;demopropietat&quot;).innerHTML =
+person.firstName + &quot; &quot; + person.lastName;
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+					</code>
+				</pre>
+			</td>
+			<td class="resultado">
+				<p id="demopropietat"></p>
+					<script>
+					var person = {
+					firstName: "Eva",
+					lastName : "Queralt",
+					id : 1128
+					};
+					document.getElementById("demopropietat").innerHTML =
+					person.firstName + " " + person.lastName;
+					</script>
+			</td>
+		</tr>
+			<td class="concepto">Mètodes
+				<p class="texto">An object method is a function definition stored as an object property.It will execute (as a function) when it is invoked with (). This example access the fullName() method of a person object: </p>
+			</td>
+			<td class="codigo">
+				<pre>
+					<code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+
+&lt;p id=&quot;demometode&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+var person = {
+firstName: &quot;John&quot;,
+lastName : &quot;Doe&quot;,
+id : 5566,
+fullName : function() {
+return this.firstName + &quot; &quot; + this.lastName;
+}
+};
+
+document.getElementById(&quot;demometode&quot;).innerHTML = person.fullName();
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+				</code>
+			</pre>
+		</td>
+		<td class="resultado">
+			<p id="demometode"></p>
+				<script>
+					var person = {
+					firstName: "John",
+					lastName : "Doe",
+					id : 5566,
+					fullName : function() {
+					return this.firstName + " " + this.lastName;
+					 	}
+					};
+					document.getElementById("demometode").innerHTML = person.fullName();
+				</script>
+		</td>
+		<tr> 
+			<th colspan="3">Funcions</th>
+		</tr>
+		<tr>
+			<td class="concepto">Sintaxi<br/>
+				<p class="texto">functionName(parameter1, parameter2, parameter3) {
+				<p class="texto">code to be executed
+				}</p>
+				<p class="texto">Function parameters are the names listed in the function definition.</p>
+
+				<p class="texto">Function arguments are the real values received by the function when it is invoked.</p>
+
+				<p class="texto">Inside the function, the arguments are used as local variables.</p>
+			</td>
+			<td class="codigo">
+				 <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p id=&quot;democalcular&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function funciocalcular(a, b) {
+return a * b;
+}
+document.getElementById(&quot;democalcular&quot;).innerHTML = funciocalcular(4, 3);
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+				</code>
+			</pre>
+		</td>
+		<td class="resultado">
+			<p id="democalcular"></p>
+
+				<script>
+					function funciocalcular(a, b) {
+					return a * b;
+					}
+					document.getElementById("democalcular").innerHTML = funciocalcular(4, 3);
+				</script>
+		</td>
+		</tr>
+		<tr>
+			<td class="concepto">Return</td>
+			<td class="codigo">
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;La funció fa la conversió de Fahrenheit a Celsius:&lt;/p&gt;
+&lt;p id=&quot;demoreturn&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function toCelsius(f) {
+return (5/9) * (f-32);
+}
+document.getElementById(&quot;demoreturn&quot;).innerHTML = toCelsius(32);
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+				</code></pre>
+			</td>
+			<td class="resultado">
+				<p>La funció fa la conversió de Fahrenheit a Celsius:</p>
+				<p id="demoreturn"></p>
+
+				<script>
+					function toCelsius(f) {
+					return (5/9) * (f-32);
+					}
+					document.getElementById("demoreturn").innerHTML = toCelsius(32);
+				</script>
+			</td>
+		</tr>
+		<tr>
+			<td class="concepto"> Les funcions son variables 
+				<p class="texto">In JavaScript, functions are objects.</p>
+
+				<p class="texto">JavaScript functions have properties and methods.</p>
+
+				<p class="texto">You can add your own properties and methods to functions.</p>
+			</td>
+			<td class="codigo">
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p id=&quot;demograus&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+document.getElementById(&quot;demograus&quot;).innerHTML =
+&quot;La temperatura es de &quot; + aCelsius(32) + &quot; Centígrads&quot;;
+
+function aCelsius(fahrenheit) {
+return (5/9) * (fahrenheit-32);
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+			</code></pre>	
+		</td>
+			<td class="resultado">
+				<p id="demograus"></p>
+
+				<script>
+				document.getElementById("demograus").innerHTML =
+				"La temperatura es de " + aCelsius(32) + " Centígrads";
+
+				function aCelsius(fahrenheit) {
+				return (5/9) * (fahrenheit-32);
+				}
+				</script>
+			</td>
+		</tr>
+		<tr> 
+			<th colspan="3">Operadors</th>
+		</tr>
+		<tr>
+			<th class="taula" colspan="3">Taula operadors aritmetics</th>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<img class="images" src="http://oi60.tinypic.com/154j4pg.jpg" />
+			</td>
+		</tr>
+		<tr>
+			<th class="taula" colspan="3">Taula assignació</th>	
+		</tr>
+		<tr>	
+			<td colspan="3">
+				<img class="images" src="http://oi57.tinypic.com/2a6widy.jpg" />
+			</td>	
+		</tr>	
+		<tr>
+			<td class="concepto">Strings</td>
+			<td class="codigo">	
+					<pre>
+						<code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt; += s'utilitza per concatenar strings.&lt;/p&gt;
+
+&lt;button onclick=&quot;funcioconcatenar()&quot;&gt;Prova-ho&lt;/button&gt;
+
+&lt;p id=&quot;democoncatenar&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function funcioconcatenar() {
+txt1 = &quot;What a very &quot;;
+txt1 += &quot;nice day&quot;;
+document.getElementById(&quot;democoncatenar&quot;).innerHTML = txt1;
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+			</code></pre>
+		</td>
+		<td class="resultado">
+			<p> += s'utilitza per concatenar strings.</p>
+
+				<button onclick="funcioconcatenar()">Prova-ho</button>
+
+				<p id="democoncatenar"></p>
+
+				<script>
+				function funcioconcatenar() {
+				txt1 = "What a very ";
+				txt1 += "nice day";
+				document.getElementById("democoncatenar").innerHTML = txt1;
+				}
+				</script>
+		</td>
+		<tr>
+			<td class="concepto">Afegint strings i números
+			</td>
+			<td class="codigo">
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;Afegint un número i un string, retorna un string&lt;/p&gt;
+
+&lt;button onclick=&quot;funcionumstring()&quot;&gt;Prova-ho&lt;/button&gt;
+
+&lt;p id=&quot;demonumstring&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function funcionumstring() {
+var x = 5 + 5;
+var y = &quot;5&quot; + 5;
+var z = &quot;Hello&quot; + 5;
+
+document.getElementById(&quot;demonumstring&quot;).innerHTML =
+x + &quot;&lt;br&gt;&quot; +
+y + &quot;&lt;br&gt;&quot; +
+z;
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+			</code></pre>
+		</td>
+		<td class="resultado">
+			<p>Afegint un número i un string, retorna un string</p>
+
+			<button onclick="funcionumstring()">Prova-ho</button>
+
+			<p id="demonumstring"></p>
+
+				<script>
+				function funcionumstring() {
+				var x = 5 + 5;
+				var y = "5" + 5;
+				var z = "Hello" + 5;
+
+				document.getElementById("demonumstring").innerHTML =
+				x + "<br>" +
+				y + "<br>" +
+				z;
+				}
+				</script>
+				</td>
+		</tr>
+		<tr>
+			<td class="concepto">Bitwise Operators</td>
+			<td class="codigo">
+				<pre>
+					<code>
+		&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;The bitwise operator &amp; return a a logical AND.&lt;/p&gt;
+
+&lt;button onclick=&quot;funciobit()&quot;&gt;Try it&lt;/button&gt;
+
+&lt;p id=&quot;demobit&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function funciobit() {
+document.getElementById(&quot;demobit&quot;).innerHTML = 5 &amp; 1;
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+					</code>
+				</pre>
+			</td>
+			<td class="resultado">
+				<p>The bitwise operator & return a a logical AND.</p>
+
+				<button onclick="funciobit()">Try it</button>
+
+				<p id="demobit"></p>
+
+				<script>
+				function funciobit() {
+				document.getElementById("demobit").innerHTML = 5 & 1;
+				}
+				</script>
+			</td>
+		</tr>
+		<tr>
+			<th class="taula" colspan="3">Taula Bitwise operators</th>
+		</tr>
+		<tr>	
+			<td colspan="3">
+				<img class="images" src="http://oi60.tinypic.com/25ezdqp.jpg"/>
+			</td>	
+		</tr>
+		<tr>
+			<td class="concepto">The typeof operator</td>
+			<td class="codigo">
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;Typeof operator torna el tipu de variable o expressió.&lt;/p&gt;
+
+&lt;button onclick=&quot;funciotypeof()&quot;&gt;Prova-ho&lt;/button&gt;
+
+&lt;p id=&quot;demotypeof&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function funciotypeof() {
+var x = 5;
+var y = &quot;John&quot;;
+document.getElementById(&quot;demotypeof&quot;).innerHTML =
+typeof x + &quot;&lt;br&gt;&quot; +
+typeof 5 + &quot;&lt;br&gt;&quot; +
+typeof (5+5) + &quot;&lt;br&gt;&quot; +
+typeof y + &quot;&lt;br&gt;&quot; +
+typeof &quot;5&quot; + &quot;&lt;br&gt;&quot; +
+typeof &quot;John&quot; + &quot;&lt;br&gt;&quot; +
+typeof (&quot;John&quot; + &quot; &quot; + &quot;Doe&quot;) + &quot;&lt;br&gt;&quot; +
+typeof false + &quot;&lt;br&gt;&quot; +
+typeof (5 &gt; 3) + &quot;&lt;br&gt;&quot; +
+typeof (3 &gt; 5) + &quot;&lt;br&gt;&quot; +
+typeof [1,2,3,4] + &quot;&lt;br&gt;&quot; +
+typeof {name:'john', age:34};
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+				</code></pre>
+			</td>
+			<td class="resultado">
+				<p>Typeof operator torna el tipu de variable o expressió.</p>
+
+				<button onclick="funciotypeof()">Prova-ho</button>
+
+				<p id="demotypeof"></p>
+
+				<script>
+				function funciotypeof() {
+				var x = 5;
+				var y = "John";
+				document.getElementById("demotypeof").innerHTML =
+				typeof x + "<br>" +
+				typeof 5 + "<br>" +
+				typeof (5+5) + "<br>" +
+				typeof y + "<br>" +
+				typeof "5" + "<br>" +
+				typeof "John" + "<br>" +
+				typeof ("John" + " " + "Doe") + "<br>" +
+				typeof false + "<br>" +
+				typeof (5 > 3) + "<br>" +
+				typeof (3 > 5) + "<br>" +
+				typeof [1,2,3,4] + "<br>" +
+				typeof {name:'john', age:34};
+				}
+				</script>
+
+			</td>
+		</tr>
+		<tr>
+			<td class="concepto">Delete operator.
+				<p class="texto">Per eliminar les propietats dels objectes</p>
+			</td>
+			<td class="codigo">
+				<pre>
+					<code>
+var person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;};
+delete person.age;
+					</code>
+				</pre>
+			</td>
+			<td class="resultado">
+				<p>var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+				delete person.age; </p>
+			</td>
+		</tr>
+		<tr>
+			<td class="concepto">The Unary + Operator
+				<p class="texto">The unary + operator can be used to convert a variable to a number:</p>
+			</td>
+			<td class="codigo">
+				<pre>
+					<code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+
+&lt;button onclick=&quot;funciounari()&quot;&gt;Prova-ho&lt;/button&gt;
+
+&lt;p id=&quot;demounari&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function funciounari() {
+var y = &quot;John&quot;;
+var x = + y;
+document.getElementById(&quot;demounari&quot;).innerHTML =
+typeof x + &quot;&lt;br&gt;&quot; + x;
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+					</code>
+				</pre>
+			</td>
+			<td class="resultado">
+				<button onclick="funciounari()">Prova-ho</button>
+
+					<p id="demounari"></p>
+
+					<script>
+					function funciounari() {
+					var y = "John";
+					var x = + y;
+					document.getElementById("demounari").innerHTML =
+					typeof x + "<br>" + x;
+					}
+					</script>
+			</td>
+		</tr>
+		<tr>
+			<th colspan="3">Comparacions</th>
+		</tr>
+		<tr>
+			<th class="taula" colspan="3">Taula Comparacions. El valor a comparar és 5</th>
+		</tr>
+		<tr>
+			<th class="titulo">Operador</th>
+			<th class="titulo">Codi</th>
+			<th class="titulo">Resultat</th>
+		</tr>
+			<td class="concepto" rowspan="2">== Igual a: </td>
+			<td class="codigo">
+				<pre>
+					<code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;5 és x, valor de la comparació (x == 8):&lt;/p&gt;
+
+&lt;button onclick=&quot;figualfalse()&quot;&gt;Prova-ho&lt;/button&gt;
+
+&lt;p id=&quot;demoigualfalse&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function figualfalse() {
+var x = 5;
+document.getElementById(&quot;demoigualfalse&quot;).innerHTML = (x == 8);
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+					</code>
+				</pre>
+			</td>
+			<td class="resultado">
+				<p>5 és x, valor de la comparació (x == 8):</p>
+
+				<button onclick="figualfalse()">Prova-ho</button>
+
+				<p id="demoigualfalse"></p>
+
+				<script>
+				function figualfalse() {
+				var x = 5;
+				document.getElementById("demoigualfalse").innerHTML = (x == 8);
+				}
+				</script>
+			</td>	
+		</tr>
+			<td class="codigo">
+				<pre>
+					<code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;5 és x, valor de la comparació (x == 5):&lt;/p&gt;
+
+&lt;button onclick=&quot;figualtrue()&quot;&gt;Prova-ho&lt;/button&gt;
+
+&lt;p id=&quot;demoigualtrue&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function figualtrue() {
+var x=5;
+document.getElementById(&quot;demoigualtrue&quot;).innerHTML = (x == 5);
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+					</code>
+				</pre>
+			</td>
+			<td class="resultado">
+				<p>5 és x, valor de la comparació (x == 5):</p>
+				<button onclick="figualtrue()">Prova-ho</button>
+				<p id="demoigualtrue"></p>
+					<script>
+						function figualtrue() {
+						var x=5;
+						document.getElementById("demoigualtrue").innerHTML = (x == 5);
+						}
+					</script>
+			</td>	
+		</tr>
+		<tr>
+			<td  class="concepto" rowspan="2">=== El mateix valor i el mateix tipus</td>
+			<td class="codigo">
+				<pre>
+					<code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;5 és x: (x === &quot;5&quot;).&lt;/p&gt;
+
+&lt;button onclick=&quot;fvalorf()&quot;&gt;Prova-ho&lt;/button&gt;
+
+&lt;p id=&quot;demovalorf&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function fvalorf() {
+var x = 5;
+document.getElementById(&quot;demovalorf&quot;).innerHTML = (x === &quot;5&quot;);
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+				</code></pre>
+			</td>
+			<td class="resultado">
+				<p>5 és x: (x === "5").</p>
+
+					<button onclick="fvalorf()">Prova-ho</button>
+					<p id="demovalorf"></p>
+							<script>
+								function fvalorf() {
+								var x = 5;
+								document.getElementById("demovalorf").innerHTML = (x === "5");
+								}
+							</script>
+			</td>
+		</tr>
+		<tr>
+			<td class="codigo">
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;5 és x (x === 5):&lt;/p&gt;
+
+&lt;button onclick=&quot;fvalort()&quot;&gt;Prova-ho&lt;/button&gt;
+
+&lt;p id=&quot;demovalort&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function fvalort () {
+var x = 5;
+document.getElementById(&quot;demovalort&quot;).innerHTML = (x === 5);
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+				</code></pre>
+			</td>
+			<td class="resultado">
+				<p>5 és x (x === 5):</p>
+
+				<button onclick="fvalort()">Prova-ho</button>
+
+				<p id="demovalort"></p>
+
+				<script>
+				function fvalort () {
+				var x = 5;
+				document.getElementById("demovalort").innerHTML = (x === 5);
+				}
+				</script>
+			</td>
+		</tr>
+		<tr>
+			<td class="concepto">!= Diferent a</td>
+			<td class="codigo">
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;5 és x (x != 8).&lt;/p&gt;
+
+&lt;button onclick=&quot;funcdif()&quot;&gt;prova-ho&lt;/button&gt;
+
+&lt;p id=&quot;demodif&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function funcdif() {
+var x = 5;
+document.getElementById(&quot;demodif&quot;).innerHTML = (x != 8);
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+				</code></pre>
+			</td>
+			<td class="resultado">
+				<p>5 és x (x != 8).</p>
+
+				<button onclick="funcdif()">Prova-ho</button>
+
+				<p id="demodif"></p>
+
+				<script>
+				function funcdif() {
+				var x = 5;
+				document.getElementById("demodif").innerHTML = (x != 8);
+				}
+				</script>
+			</td>
+		</tr>
+		<tr>
+			<td class="concepto" rowspan="2">!== diferent valor o tipus diferent</td>
+			<td class="codigo">
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;5 és x (x !== &quot;5&quot;).&lt;/p&gt;
+
+&lt;button onclick=&quot;fdifttr()&quot;&gt;Prova-ho&lt;/button&gt;
+
+&lt;p id=&quot;demodifttr&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function fdifttr() {
+var x = 5;
+document.getElementById(&quot;demodifttr&quot;).innerHTML = (x !== &quot;5&quot;);
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+				</code></pre>
+			</td>
+			<td class="resultado">
+				<p>5 és x (x !== "5").</p>
+
+					<button onclick="fdifttr()">Prova-ho</button>
+
+					<p id="demodifttr"></p>
+
+					<script>
+					function fdifttr() {
+					var x = 5;
+					document.getElementById("demodifttr").innerHTML = (x !== "5");
+					}
+					</script>
+
+			</td>
+		</tr>
+		<tr>
+			<td class="codigo">
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;5 és x (x !== 5):&lt;/p&gt;
+
+&lt;button onclick=&quot;funcdiffl()&quot;&gt;Prova-ho&lt;/button&gt;
+
+&lt;p id=&quot;demodiffl&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function funcdiffl() {
+var x = 5;
+document.getElementById(&quot;demodiffl&quot;).innerHTML = (x !== 5);
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+				</code></pre>
+			</td>
+			<td class="resultado">
+				<p>5 és x (x !== 5):</p>
+					<button onclick="funcdiffl()">Prova-ho</button>
+
+					<p id="demodiffl"></p>
+
+					<script>
+					function funcdiffl() {
+					var x = 5;
+					document.getElementById("demodiffl").innerHTML = (x !== 5);
+					}
+					</script>
+			</td>
+		</tr>
+		<tr>
+			<td class="concepto">&gt; , més gran que</td>
+			<td class="codigo">
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;5 és x (x &gt; 8).&lt;/p&gt;
+
+&lt;button onclick=&quot;funcmesgr()&quot;&gt;Prova-ho&lt;/button&gt;
+
+&lt;p id=&quot;demomesgr&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function funcmesgr() {
+var x = 5;
+document.getElementById(&quot;demomesgr&quot;).innerHTML = (x &gt; 8);
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+				</code></pre>
+			</td>
+			<td class="resultado">
+				<p>5 és x (x > 8).</p>
+	 
+				<button onclick="funcmesgr()">Prova-ho</button>
+
+				<p id="demomesgr"></p>
+
+						<script>
+							function funcmesgr() {
+								var x = 5;
+								document.getElementById("demomesgr").innerHTML = (x > 8);
+							}
+						</script>
+						
+			</td>
+		</tr>
+		<tr>
+			<td class="concepto">&lt; , més petit que</td>
+			<td class="codigo">
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;5 és x (x &lt; 8).&lt;/p&gt;
+
+&lt;button onclick=&quot;funcmespet()&quot;&gt;Prova-ho&lt;/button&gt;
+
+&lt;p id=&quot;demomespet&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function funcmespet() {
+var x = 5;
+document.getElementById(&quot;demomespet&quot;).innerHTML = (x &lt; 8);
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+				</code></pre>
+			</td>
+			<td class="resultado">
+				<p>5 és x (x < 8).</p>
+				<button onclick="funcmespet()">Prova-ho</button>
+
+				<p id="demomespet"></p>
+
+				<script>
+				function funcmespet() {
+				var x = 5;
+				document.getElementById("demomespet").innerHTML = (x < 8);
+				}
+				</script>
+			</td>
+		</tr>
+		<tr>
+			<td class="concepto">&gt;= més gran que o igual a</td>
+			<td class="codigo">
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;5 és x (x &gt;= 8).&lt;/p&gt;
+
+&lt;button onclick=&quot;funcmesgranque()&quot;&gt;Prova-ho&lt;/button&gt;
+
+&lt;p id=&quot;demomesgranque&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function funcmesgranque() {
+var x = 5;
+document.getElementById(&quot;demomesgranque&quot;).innerHTML = (x &gt;= 8);
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+				</code></pre>
+			</td>
+			<td class="resultado">
+				<p>5 és x (x >= 8).</p>
+
+				<button onclick="funcmesgranque()">Prova-ho</button>
+
+				<p id="demomesgranque"></p>
+
+				<script>
+				function funcmesgranque() {
+				var x = 5;
+				document.getElementById("demomesgranque").innerHTML = (x >= 8);
+				}
+				</script>
+			</td>
+		</tr>
+		<tr>
+			<td class="concepto">&lt;= , més petit que o igual a</td>
+			<td class="codigo">
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;5 és x (x &lt;= 8).&lt;/p&gt;
+
+&lt;button onclick=&quot;fmespetq()&quot;&gt;Prova-ho&lt;/button&gt;
+
+&lt;p id=&quot;demomespetq&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function fmespetq() {
+var x = 5;
+document.getElementById(&quot;demomespetq&quot;).innerHTML = (x &lt;= 8);
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+				</code></pre>
+			</td>
+			<td class="resultado"><p>5 és x (x <= 8).</p>
+
+				<button onclick="fmespetq()">Prova-ho</button>
+
+				<p id="demomespetq"></p>
+
+				<script>
+				function fmespetq() {
+				var x = 5;
+				document.getElementById("demomespetq").innerHTML = (x <= 8);
+				}
+				</script></td>
+		</tr>
+		<tr>
+			<th class="taula" colspan="3">Taula operadors logics</th>
+		</tr>
+		<tr>
+			<th class="titulo">Operador</th>
+			<th class="titulo">Descripció</th>
+			<th class="titulo">Exemple</th>
+		</tr>
+		<tr>
+			<td class="concepto">&amp;&amp;</td>
+			<td class="codigo">and</td>
+			<td class="resultado"> (x &lt; 10 &amp;&amp; y &gt; 1) és true</td>
+		</tr>
+		<tr>
+			<td class="concepto">||</td>
+			<td class="codigo">or</td>
+			<td class="resultado">(x == 5 || y == 5) és false</td>
+		</tr>
+		<tr>
+			<td class="concepto">!</td>
+			<td class="codigo">not</td>
+			<td class="resultado"> !(x == y) és true</td>
+		</tr>
+		<tr>
+			<th class="taula" colspan="3">Operadors condicionals</th>
+		</tr>
+		<tr>
+			<td class="concepto">Sintaxi operadors condicionals
+			<p class="texto">variablename = (condition) ? value1:value2 </p>
+			</td>	
+			<td class="codigo">
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;Escriu la teva edat:&lt;/p&gt;
+
+&lt;input id=&quot;age&quot; value=&quot;18&quot; /&gt;
+
+&lt;button onclick=&quot;funcondicional()&quot;&gt;Prova-ho&lt;/button&gt;
+
+&lt;p id=&quot;demoopcondicional&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function funcondicional() {
+var age,voteable;
+age = document.getElementById(&quot;age&quot;).value;
+voteable = (age &lt; 18) ? &quot;Massa jove&quot;:&quot;Edat suficient&quot;;
+document.getElementById(&quot;demoopcondicional&quot;).innerHTML = voteable + &quot; per votar.&quot;;
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+				</code></pre>
+			</td>
+			<td class="resultado">
+
+				<p>Escriu la teva edat:</p>
+
+				<input id="age" value="18" />
+
+				<button onclick="funcondicional()">Prova-ho</button>
+
+				<p id="demoopcondicional"></p>
+
+				<script>
+					function funcondicional() {
+					var age,voteable;
+					age = document.getElementById("age").value;
+					voteable = (age < 18) ? "Massa jove":"Edat suficient ";
+					document.getElementById("demoopcondicional").innerHTML = voteable + " per votar.";
+					}
+				</script>
+			</td>
+		</tr>
+		<tr>
+			<th colspan="3">Condicions</th>
+			</tr>
+		<tr>
+			<td class="concepto"><p>IF</p>
+				<p class="texto">JS és case sensitive</p>
+			</td>
+			<td class="codigo">
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;Mostra &quot;Bon dia&quot;, si és abans de les 20:00:&lt;/p&gt;
+
+&lt;button onclick=&quot;funchora()&quot;&gt;Prova-ho&lt;/button&gt;
+
+&lt;p id=&quot;demohora&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function funchora() {
+if (new Date().getHours() &lt; 20) {
+document.getElementById(&quot;demohora&quot;).innerHTML = &quot;Bon dia&quot;;
+}
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+&lt;/html&gt;
+				</code></pre>
+			</td>
+			<td class="resultado">
+				<p>Mostra "Bon dia", si és abans de les 20:00:</p>
+
+				<button onclick="funchora()">Prova-ho</button>
+
+				<p id="demohora"></p>
+
+				<script>
+					function funchora() {
+					if (new Date().getHours() < 20) {
+					document.getElementById("demohora").innerHTML = "Bon dia";
+						}
+					}
+				</script>
+
+			</td>
+		</tr>
+		<tr>
+			<td class="concepto">ELSE</td>
+			<td class="codigo">
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;Click &lt;/p&gt;
+
+&lt;button onclick=&quot;fhoraelse()&quot;&gt;Prova-ho&lt;/button&gt;
+
+&lt;p id=&quot;demohorael&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function fhoraelse() {
+var greeting;
+if (new Date().getHours() &lt; 20) {
+greeting = &quot;Bon dia&quot;;
+} else {
+greeting = &quot;Bon vespre/nit&quot;;
+}
+document.getElementById(&quot;demohorael&quot;).innerHTML = greeting;
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+				</code></pre>
+			<td class="resultado">
+		<p>Click! Si és abans de les 20h rebràs un missatge, si és més tard, un altre diferent.</p>
+
+				<button onclick="fhoraelse()">Prova-ho</button>
+
+				<p id="demohorael"></p>
+
+				<script>
+					function fhoraelse() {
+					var greeting;
+					if (new Date().getHours() < 20) {
+					greeting = "Bon dia";
+					} else {
+					greeting = "Bon vespre/nit";
+					}
+					document.getElementById("demohorael").innerHTML = greeting;
+					}
+				</script>
+			</td>
+		</tr>
+		<tr>
+			<td class="concepto">ELSE IF</td>
+			<td class="codigo">
+				<pre><code>
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;Click:&lt;/p&gt;
+
+&lt;button onclick=&quot;fhoraelif()&quot;&gt;Prova-ho&lt;/button&gt;
+
+&lt;p id=&quot;demoeleif&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function fhoraelif() {
+var greeting;
+var time = new Date().getHours();
+if (time &lt; 10) {
+greeting = &quot;Bon dia&quot;;
+} else if (time &lt; 20) {
+greeting = &quot;Bon dia&quot;;
+} else {
+greeting =&quot;Bon vespre/nit&quot;;
+}
+document.getElementById(&quot;demoeleif&quot;).innerHTML = greeting;
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+				</code></pre>
+			</td>
+			<td class="resultado">
+				<p>Click! depenent de l'hora del dia rebràs un missatge diferent.</p>
+
+				<button onclick="fhoraelif()">Prova-ho</button>
+
+				<p id="demoeleif"></p>
+
+					<script>
+						function fhoraelif() {
+						var greeting;
+						var time = new Date().getHours();
+						if (time < 10) {
+						greeting = "Bon dia";
+						} else if (time < 20) {
+						greeting = "Bon dia";
+						} else {
+						greeting ="Bon vespre/nit";
+						}
+						document.getElementById("demoeleif").innerHTML = greeting;
+						}
+					</script>
+				</td>
+			</tr>
+			<tr>
+				<th colspan="3">Switch</th>
+			</tr>
+			<tr>
+				<td class="concepto">Sintaxi Switch</td>
+			<td class="codigo">
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;Quin dia es avui?&lt;/p&gt;
+
+&lt;button onclick=&quot;funcswitch()&quot;&gt;Prova-ho&lt;/button&gt;
+
+&lt;p id=&quot;demoswitch&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function funcswitch() {
+var day;
+switch (new Date().getDay()) {
+case 0:
+day = &quot;Diumenge&quot;;
+break;
+case 1:
+day = &quot;Dilluns&quot;;
+break;
+case 2:
+day = &quot;Dimarts&quot;;
+break;
+case 3:
+day = &quot;Dimecres&quot;;
+break;
+case 4:
+day = &quot;Dijous&quot;;
+break;
+case 5:
+day = &quot;Divendres&quot;;
+break;
+case 6:
+day = &quot;Dissabte&quot;;
+break;
+}
+document.getElementById(&quot;demoswitch&quot;).innerHTML = &quot;Avui és &quot; + day;
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+				</code></pre>
+			</td>
+			<td class="resultado">
+				<p>Quin dia és avui?</p>
+
+				<button onclick="funcswitch()">Prova-ho</button>
+
+				<p id="demoswitch"></p>
+
+				<script>
+				function funcswitch() {
+				var day;
+				switch (new Date().getDay()) {
+				case 0:
+				day = "Diumenge";
+				break;
+				case 1:
+				day = "Dilluns";
+				break;
+				case 2:
+				day = "Dimarts";
+				break;
+				case 3:
+				day = "Dimecres";
+				break;
+				case 4:
+				day = "Dijous";
+				break;
+				case 5:
+				day = "Divendres";
+				break;
+				case 6:
+				day = "Dissabte";
+				break;
+				}
+				document.getElementById("demoswitch").innerHTML = "Avui és " + day;
+				}
+				</script>
+			</td>
+		</tr>
+		<tr>	
+			<td class="concepto">Default</td>
+			<td class="codigo">
+				<pre>
+					<code>
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;Quin dia és avui?:&lt;/p&gt;
+
+&lt;button onclick=&quot;funcdefault()&quot;&gt;Prova-ho&lt;/button&gt;
+
+&lt;p id=&quot;demodefault&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function funcdefault() {
+var text;
+switch (new Date().getDay()) {
+case 6:
+text = &quot;Avui és dissabte&quot;;
+break;
+case 0:
+text = &quot;Avui és diumengte&quot;;
+break;
+default:
+text = &quot;Esperant el pròxim cap de setmana&quot;;
+}
+document.getElementById(&quot;demodefault&quot;).innerHTML = text;
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+				</code></pre>
+			</td>
+			<td class="resultado">
+				<p>Quin dia és avui?:</p>
+
+				<button onclick="funcdefault()">Prova-ho</button>
+
+				<p id="demodefault"></p>
+
+				<script>
+					function funcdefault() {
+					var text;
+					switch (new Date().getDay()) {
+					case 6:
+					text = "Avui és dissabte";
+					break;
+					case 0:
+					text = "Avui és diumengte";
+					break;
+					default:
+					text = "Esperant el pròxim cap de setmana";
+					}
+					document.getElementById("demodefault").innerHTML = text;
+					}
+				</script>
+			</td>
+		</tr>
+		<tr>
+			<th colspan="3">Bucle FOR</th>
+		</tr>
+		<tr>
+			<td class="concepto">FOR</td>
+			<td class="codigo">
+				<pre>
+					<code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;El bucle es repetirà 5 vegades.&lt;/p&gt;
+
+&lt;button onclick=&quot;funcfor()&quot;&gt;Prova-ho&lt;/button&gt;
+
+&lt;p id=&quot;demofor&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function funcfor() {
+var text = &quot;&quot;;
+var i;
+for (i = 0; i &lt; 5; i++) {
+text += &quot;El numero és &quot; + i + &quot;&lt;br&gt;&quot;;
+}
+document.getElementById(&quot;demofor&quot;).innerHTML = text;
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+					</code>
+				</pre>	
+			</td>
+			<td class="resultado">	
+				<p>El bucle es repetirà 5 vegades.</p>
+
+					<button onclick="funcfor()">Prova-ho</button>
+
+					<p id="demofor"></p>
+
+					<script>
+						function funcfor() {
+						var text = "";
+						var i;
+						for (i = 0; i < 5; i++) {
+						text += "El numero és " + i + "<br>";
+						}
+						document.getElementById("demofor").innerHTML = text;
+						}
+					</script>
+			</td>
+		</tr>
+		<tr>
+			<td class="concepto">Bucle For In
+				<p class="texto">The JavaScript for/in statement loops through the properties of an object:</p>
+			</td>
+			<td class="codigo">	
+				<pre>
+					<code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p id=&quot;demoforin&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+var txt = &quot;&quot;;
+var person = {fname:&quot;John&quot;, lname:&quot;Doe&quot;, age:25}; 
+var x;
+for (x in person) {
+txt += person[x] + &quot; &quot;;
+}
+document.getElementById(&quot;demoforin&quot;).innerHTML = txt;
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+					</code>
+				</pre>
+			</td>
+			<td class="resultado">
+				<p id="demoforin"></p>
+					<script>
+					var txt = "";
+					var person = {fname:"John", lname:"Doe", age:25}; 
+					var x;
+					for (x in person) {
+					txt += person[x] + " ";
+					}
+					document.getElementById("demoforin").innerHTML = txt;
+					</script>
+			</td>
+		</tr>
+		<tr>
+			<th colspan="3">Bucle While</th>
+		</tr>
+		<tr>
+			<td class="concepto">While</td>
+			<td class="codigo">
+				<pre>
+					<code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;El bucle s'excutarà sempre que la i sigui menor a 10.&lt;/p&gt;
+
+&lt;button onclick=&quot;funcwhile()&quot;&gt;Try it&lt;/button&gt;
+
+&lt;p id=&quot;demowhile&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function funcwhile() {
+var text = &quot;&quot;
+var i = 0;
+do {
+text += &quot;&lt;br&gt;El numero és &quot; + i;
+i++;
+}
+while (i &lt; 10) 
+document.getElementById(&quot;demowhile&quot;).innerHTML = text;
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html
+					</code>
+				</pre>
+			</td>
+			<td class="resultado">
+				<p>El bucle s'excutarà sempre que la i sigui menor a 10.</p>
+
+				<button onclick="funcwhile()">Prova-ho</button>
+
+				<p id="demowhile"></p>
+
+				<script>
+					function funcwhile() {
+					var text = ""
+					var i = 0;
+					do {
+					text += "<br>El numero és " + i;
+					i++;
+					}
+					while (i < 10) 
+					document.getElementById("demowhile").innerHTML = text;
+					}
+				</script>
+			</td>
+		</tr>		
+ 	</table>
+</body>
+
+</html>
