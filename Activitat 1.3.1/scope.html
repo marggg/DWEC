@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<body>
+
+
+<h1>ACTIVITAT 1.3.1 SCOPE </h1>
+	<h2>Resposta 2</h2>
+		<pre>
+			<code>
+&lt;p&gt;jo sóc de...&lt;p&gt;
+&lt;script&gt;
+function ciutadaBCN1() {
+var joSocDe=&quot;BCN&quot;;
+alert(joSocDe);
+}
+function ciutadaPar1() {
+var joSocDe=&quot;Paris&quot;;
+alert(joSocDe);
+}
+&lt;/script&gt;
+
+&lt;button onclick=ciutadaBCN1()&gt;BCN&lt;/button&gt;
+&lt;button onclick=ciutadaPar1()&gt;Paris&lt;/button&gt;
+			</code>
+		</pre>
+<p>jo sóc de...<p>
+	<script>
+		function ciutadaBCN1() {
+			var joSocDe="BCN";
+				alert(joSocDe);
+			}
+		function ciutadaPar1() {
+			var joSocDe="Paris";
+				alert(joSocDe);
+	</script>
+<button onclick=ciutadaBCN1()>BCN</button>
+<button onclick=ciutadaPar1()>Paris</button>
+	<h2>Resposta 3</h2>
+		<pre>
+			<code>
+&lt;script&gt;
+var elMeuContinentE=&quot;Europa&quot;;
+
+function ciutadaBCN2() {
+var joSocDe=&quot;BCN&quot;+&quot;, &quot;+ elMeuContinentE;
+alert(joSocDe);
+}
+function ciutadaPar2() {
+var joSocDe=&quot;Paris&quot;+&quot;, &quot;+ elMeuContinentE;
+alert(joSocDe);
+}
+&lt;/script&gt;	
+
+&lt;button onclick=ciutadaBCN2()&gt;BCN&lt;/button&gt;
+&lt;button onclick=ciutadaPar2()&gt;Paris&lt;/button&gt;
+			</code>
+		</pre>		
+	<script>
+		var elMeuContinentE="Europa"; 
+			function ciutadaBCN2() {
+	    		var joSocDe="BCN"+", "+ elMeuContinentE;
+				alert(joSocDe);
+			}
+			function ciutadaPar2() {
+			  	var joSocDe="Paris"+", "+ elMeuContinentE;
+				alert(joSocDe);
+			}
+	</script>
+<button onclick=ciutadaBCN2()>BCN</button>
+<button onclick=ciutadaPar2()>Paris</button>
+	<h2>Resposta 4</h2>	
+		<pre>
+			<code>
+&lt;script&gt;
+var elMeuContinentE=&quot;Europa&quot;;
+
+function ciutadaBCN() {
+joSocDe=&quot;jo soc d'una ciutat d'Europa&quot;;
+alert(joSocDe);
+}
+function ciutadaPar() {
+
+alert(joSocDe);
+}
+&lt;/script&gt;
+&lt;button onclick=ciutadaBCN3()&gt;BCN&lt;/button&gt;
+&lt;button onclick=ciutadaPar3()&gt;Paris&lt;/button&gt;
+			</code>		
+		</pre>	
+	<script>
+		var elMeuContinentE="Europa"; 
+
+			function ciutadaBCN3() {
+				   joSocDe="jo soc d'una ciutat d'Europa";
+					alert(joSocDe);
+				}
+			function ciutadaPar3() {
+					alert(joSocDe);
+				}
+	</script>
+	<button onclick=ciutadaBCN3()>BCN</button>
+	<button onclick=ciutadaPar3()>Paris</button>
+
+</body>
+</html>
